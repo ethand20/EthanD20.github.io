@@ -56,3 +56,79 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color:   
+ #f4f4f4;
+    }
+
+    .container {
+      background-color: #fff;
+      padding:   
+ 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"], input[type="password"]   
+ {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background-color: #5cb85c;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="/login" method="post"> 
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"   
+ required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input type="submit" value="Login">   
+
+    </form>
+  </div>
+
+  <script>   
+
+    // This is a simple client-side simulation of login success
+    // In a real application, you would handle login on the server
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent default form submission   
+
+
+      // Simulate successful login
+      window.location.href = 'success.html'; 
+    });
+  </script>
+</body>
+</html>
